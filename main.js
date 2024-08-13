@@ -1,4 +1,8 @@
-const token = process.env.token
+require("dotenv").config();
+
+const token = process.env.BOT_TOKEN
+console.log(token);
+
 const { Client, EmbedBuilder, GatewayIntentBits } = require("discord.js");
 
 const bot = new Client({
