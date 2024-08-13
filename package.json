@@ -1,0 +1,21 @@
+{
+  "name": "discord-welcome-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akram-Sakib/discord-welcome-bot.git"
+  },
+  "author": "akramsakib",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  },
+  "devDependencies": {
+    "wrangler": "^3.70.0"
+  }
+}
