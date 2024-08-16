@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const token = process.env.BOT_TOKEN
 const { Client, EmbedBuilder, GatewayIntentBits } = require("discord.js");
+const serverID = "977250450799726662"
 
 const bot = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
@@ -12,8 +13,8 @@ bot.on("ready", () => {
 });
 
 bot.on("guildMemberAdd", (member) => {
-  const channelID = "1272778983787855932";
-  if (member.guild.id !== "1272778875574685726") return;
+  const channelID = "1272858378862985278";
+  if (member.guild.id !== serverID) return;
 
   const embed = new EmbedBuilder()
     .setTitle("Member Joined!!")
@@ -30,12 +31,12 @@ bot.on("guildMemberAdd", (member) => {
 });
 
 bot.on("guildMemberRemove", (member) => {
-  const channelID = "1272791105611632651";
-  if (member.guild.id !== "1272778875574685726") return;
+  const channelID = "1272858477294915715";
+  if (member.guild.id !== serverID) return;
 
   const embed = new EmbedBuilder()
     .setTitle("Member Left!!")
-    .setDescription(`${member.user.displayName} has left this server`)
+    .setDescription(`${member.user.displayName} has left from the server`)
     .setColor("Orange")
     .setTimestamp();
 
